@@ -1,0 +1,36 @@
+html
+	head
+		title Fabi's Gems
+		script(src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous")
+		link(rel="stylesheet" href="main.css") 
+		link(rel="stylesheet" href="fa/css/font-awesome.min.css") 
+		script.
+			$(document).ready(function() {
+				$('.js-icon').on('click', function() {
+					$('.add_item').slideToggle();
+				});
+
+				$('.nav li').on('click', function() {
+					$(this).parent().find('li').each(function() {
+						$(this).removeClass('active');
+					});
+
+					$(this).addClass('active');
+				});
+			});
+	body
+		div(class="header")
+			div(class="logo")
+				img(src="logo.png" height="75px")
+			div(class="add")
+				i(class="fa fa-plus-circle fa-2x js-icon") 
+			div(style="clear:both;")
+		div(class="content_container")
+			div(class="add_item shadow") Add content
+			div(class="content shadow")
+				div(class="nav")
+					ul
+						li(class="active") Images
+						li Links
+		div(style="clear:both;")
+		div(class="ts")

@@ -1,0 +1,58 @@
+body { background-color: #E1DFDF; margin: 0px;}
+.header { background-color: #FFF; padding: 20px; }
+.add { float: right; }
+.logo { size: 2.2em; float: left; }
+.ts { background-color:#8FC147; height: 200px; }
+.content_container { 
+	position: absolute; 
+	z-index: 2000; 
+	margin-top: 50px; 
+	margin-bottom: 50px;
+	margin-left: auto; 
+	margin-right: auto; 
+	left: 0; 
+	right: 0; 
+	padding: 15px; 
+	width: 800px;
+}
+.add_item {
+	background-color: #FFF; 
+	border-radius: 10px; 
+	padding: 15px; 
+	margin-bottom: 20px;
+	min-height: 200px;
+	display:none;
+}
+.content {
+	background-color: #FFF; 
+	border-radius: 10px; 
+	padding: 15px; 
+	min-height: 800px; 
+}
+
+.shadow {
+	box-shadow: 0px 1px 5px 1px #888888;
+}
+
+.content li {
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.content li.active {
+	border-bottom: 3px solid #8FC147;
+}
+
+.content .nav {
+	text-align: center;
+}
+
+.js-icon {
+	display: inline;
+	padding-top: 25px;
+	padding-right: 25px;
+	color: #8FC147;
+}
